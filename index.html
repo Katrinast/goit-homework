@@ -17,27 +17,33 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <header class="header">
-<div class="container">
-  <nav class="nav">
-    <ul class="menu">
-     <li class="menu-item">
-      <a href="" class="menu-link">Что нового</a>
-     </li>
-    <li class="menu-item">
-      <a href="" class="menu-link">Цвет</a>
-    </li>
-    <li class="menu-item">
-      <a href="" class="menu-link">Заказать</a>
-    </li>
-    </ul>
-    <a class="logo">
-      <img class="logo-img" src="images/logo.svg" alt="logo of site">
-    </a>
-    <a href="tel:380504565656" class="phone">+38 050-456-56-56</a>
-  </nav>
-</div>
-  </header>  -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <button class="menu-btn" type="button">
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+          </button>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="" class="menu-link">Что нового</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Цвет</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Заказать</a>
+            </li>
+          </ul>
+          <a class="logo">
+            <img class="logo-img" src="images/logo.svg" alt="logo of site" />
+          </a>
+          <a href="tel:380504565656" class="phone">+38 050-456-56-56</a>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -81,82 +87,110 @@
                 который может за секунду производить 4 трлн операций с фото.</b
               >
             </div>
-            <img class="new-img" src="./imges/apple.png" alt="iphone pro max" />
+            <img
+              class="new-img"
+              src="./images/apple.png"
+              alt="iphone pro max"
+            />
           </div>
         </div>
       </section>
-      <!-- <section class="color">
+      <section class="color">
+        <div class="container">
+          <p class="color-title">ВЫБЕРИ СВОЙ ЦВЕТ</p>
+          <ul class="color-list">
+            <li class="color-item">
+              <img
+                srcset="
+                  ./images/silver-min.jpeg    1x,
+                  ./images/silver-2x-min.jpeg 2x
+                "
+                src="./images/silver-2x-min.jpeg"
+                alt="iphone silver"
+              />
+              <h3>Silver</h3>
+              <p>Серебристый</p>
+            </li>
+            <li class="color-item">
+              <img
+                srcset="
+                  ./images/purple-min.jpeg    1x,
+                  ./images/purple-2x-min.jpeg 2x
+                "
+                src="./images/purple-2x-min.jpeg"
+                alt="iphone purple"
+              />
+              <h3>Deep purple</h3>
+              <p>Темно фиолетовый</p>
+            </li>
+            <li class="color-item">
+              <img
+                srcset="./images/gold-min.jpeg 1x, ./images/gold-2x-min.jpeg 2x"
+                src="./images/gold-2x-min.jpeg"
+                alt="iphone gold"
+              />
+              <h3>Gold</h3>
+              <p>Золотой</p>
+            </li>
+            <li class="color-item">
+              <img
+                srcset="
+                  ./images/black-min.jpeg    1x,
+                  ./images/black-2x-min.jpeg 2x
+                "
+                src="./images/black-2x-min.jpeg"
+                alt="iphone black"
+              />
+              <h3>Space Black</h3>
+              <p>Космический черный</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts-inner">
+            <form class="contacts-form" action="#">
+              <h2 class="contacts-title">ХОЧЕШЬ IPHONE 14 PRO?</h2>
+              <input
+                class="contacts-input"
+                type="text"
+                placeholder="Ваше имя"
+                aria-label="your name"
+              />
+              <input
+                class="contacts-input"
+                type="tel"
+                placeholder="Номер телефона"
+                aria-label="your numnber of phone"
+                requered
+              />
+              <p>В ближайшее время наш менеджер свяжется с Вами</p>
+              <button type="submit">ЗАКАЗАТЬ</button>
+            </form>
+            <img
+              class="contacts-img"
+              width="600"
+              height="600"
+              srcset="./images/contacts.jpeg 1x, ./images/contacts2x.jpeg 2x"
+              src="./images/contacts.jpeg"
+              alt="iphone"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
-        <p class="color-title">
-          ВЫБЕРИ СВОЙ ЦВЕТ
-        </p>
-        <ul class="color-list">
-          <li class="color-item">
-            <img
-            srcset="./images/silver-min.jpeg 1x, ./images/silver2x-min.jpeg 2x"
-            src="./images/silver-min.jpeg" 
-            alt="iphone silver"></img>
-            <h3>Silver</h3>
-            <p>Серебристый</p>
-          </li>
-          <li class="color-item">
-            <img 
-            srcset="./images/purple-min.jpeg 1x, ./images/purple2x-min.jpeg 2x"
-            src="./images/purple-min.jpeg" alt="iphone purple">
-          </img>
-            <h3>Deep purple</h3>
-            <p>Темно фиолетовый</p>
-          </li>
-          <li class="color-item">
-            <img
-            srcset="./images/gold-min.jpeg 1x, ./images/gold2x-min.jpeg 2x"
-            src="./imges/gold-min.jpeg" alt="iphone gold">
-          </img>
-            <h3>Gold</h3>
-            <p>Золотой</p>
-          </li>
-          <li class="color-item">
-            <img
-            srcset="./images/black-min.jpeg 1x, ./images/black2x-min.jpeg 2x"
-            src="./imges/black-min.jpeg" 
-            alt="iphone black">
-          </img>
-            <h3>Space Black</h3>
-            <p>Космический черный</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="contacts">
-      <div class="container">
-        <div class="contacts-inner">
-          <form class="contacts-form" action="#">
-          <h2 class="contacts-title">
-            ХОЧЕШЬ IPHONE 14 PRO?
-          </h2>
-          <input class="contacts-input" type="text" placeholder="Ваше имя" aria-label="your name" requered>
-          <input class="contacts-input" type="tel" placeholder="Номер телефона" aria-label="your numnber of phone" requered>
-          <p>В ближайшее время наш менеджер свяжется с Вами</p>
-          <button type="submit">ЗАКАЗАТЬ
-          </button>
-          </form>
-          <img width="600" height="600"
-          srcset="./images/contacts.jpeg 1x, ./images/contacts2x.jpeg 2x"
-          src="./images/contacts.jpeg" alt="iphone">
+        <div class="footer-inner">
+          <a class="footer-link" href="#">Политика конфиденциальности</a>
+          <a class="logo">
+            <img class="logo-img" src="images/logo.svg" alt="logo of site" />
+          </a>
+          <a href="tel:380504565656" class="phone">+38 050-456-56-56</a>
         </div>
       </div>
-    </section> -->
-    </main>
-    <!-- <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <a class="footer-link" href="#">Политика конфиденциальности</a>
-        <a class="logo">
-      <img class="logo-img" src="images/logo.svg" alt="logo of site">
-    </a>
-    <a href="tel:380504565656" class="phone">+38 050-456-56-56</a>
-      </div>
-    </div>
-  </footer> -->
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
